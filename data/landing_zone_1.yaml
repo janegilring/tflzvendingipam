@@ -1,0 +1,12 @@
+---
+name: "lz1"
+workload: Production
+location: westeurope
+billing_enrollment_account: 123456
+management_group_id: alz-landingzones-corp
+virtual_networks:
+  name: vnet-spoke1
+  location : westeurope
+  address_space:
+    - "10.0.1.0/24" # not used, Azure IPAM overrides
+  resource_group_name: rg-networking
